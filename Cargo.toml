@@ -6,6 +6,11 @@ repository = "https://github.com/oeb25/repro-dist-choco-nodejs"
 
 [dependencies]
 
+[workspace.metadata.release]
+publish = false
+tag-name = "v{{version}}"
+shared-version = true
+
 # The profile that 'dist' will build with
 [profile.dist]
 inherits = "release"
